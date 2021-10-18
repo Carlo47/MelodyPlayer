@@ -44,7 +44,8 @@ Therefore, we have to define our own convention for this.
 
 For the note lengths I used the enumeration class
 ```
-enum class N_LEN { N64=1, N32=2, N32d=3, N16=4, N16d=6, N8=8, N8d=12, N4=16, N4d=24, N2=32, N2d=48, N1=64, N1d=96 }
+enum class N_LEN { N64=1, N32=2, N32d=3, N16=4, N16d=6, N8=8, N8d=12, 
+N4=16, N4d=24, N2=32, N2d=48, N1=64, N1d=96 }
 ```
 N_LEN::N4 stands for a quarter note and N_LEN::N2d for a dotted half 
 note. The numerical values stand for the number of sixty-fourths. But 
@@ -53,7 +54,8 @@ specified.
 
 Again, I use an enumeration class for the tempo:
 ```
-enum class TEMPO { LARGO=50, LARGHETTO=63, ADAGIO=71, ANDANTE=92, MODERATO=114, ALLEGRO=144, PRESTO=184, PRESTISSIMO=204 }
+enum class TEMPO { LARGO=50, LARGHETTO=63, ADAGIO=71, ANDANTE=92, MODERATO=114, 
+ALLEGRO=144, PRESTO=184, PRESTISSIMO=204 }
 ```
 The numbers represent quarter beats per minute.
 
